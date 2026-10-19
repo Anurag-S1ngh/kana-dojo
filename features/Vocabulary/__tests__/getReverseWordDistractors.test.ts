@@ -52,4 +52,17 @@ describe('getReverseWordDistractors', () => {
   it('returns an empty list for an empty pool', () => {
     expect(getReverseWordDistractors(entry('ねこ', ['cat']), [])).toEqual([]);
   });
+
+  it('disambiguates transitive/intransitive pairs sharing a meaning', () => {
+    // Regression #32148: あく (intransitive) and あける (transitive)
+    // share the primary meaning "to open". In reverse Pick mode the
+    // prompt shows "to open" either way, so the sibling must not appear
+    // as a distractor or the learner has to flip a coin.
+    const aku = entry('あく', ['to open', 'to become open']);
+    const akeru = entry('あける', ['to open']);
+    const pool = [aku, akeru, entry('たべる', ['to eat'])];
+
+    expect(getReverseWordDistractors(aku, pool)).toEqual(['たべる']);
+    expect(getReverseWordDistractors(akeru, pool)).toEqual(['たべる']);
+  });
 });
