@@ -447,11 +447,19 @@
     "region": "Okinawa",
     "note": "Famous Okinawan resilience phrase. (Set 5)"
   },
-{
+  {
     "dialect": "〜じゃけぇ",
     "standardJapanese": "〜だから",
     "english": "because",
     "region": "Hiroshima",
     "note": "Common causal ending. (Set 5)"
-  }
+  },
+  {
+    "dialect": "めっちゃ",
+    "standardJapanese": "とても",
+    "english": "very",
+    "region": "Kansai",
+    "note": "Now used nationwide. (Set 2)"
+  },
+  {"dialect": "でら", "standardJapanese": "とても", "english": "very", "region": "Nagoya", "note": "Characteristic Nagoya intensifier. (Set 5)"}
 ]

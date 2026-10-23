@@ -365,11 +365,16 @@
   "explanation": "Used to comfort someone: 'never mind'. (Set 6)",
   "example": "ミスしてもドンマイ！"
 },
+   {
+    "termA": "マンション (manshon)",
+    "termB": "mansion (English)",
+    "explanation": "マンション means apartment building in Japanese. (Set 3)",
+    "example": "駅前のマンションに住んでいます。"
+  },
   {
-  "termA": "マンション (manshon)",
-  "termB": "mansion (English)",
-  "explanation": "マンション means apartment building in Japanese. (Set 3)",
-  "example": "駅前のマンションに住んでいます。"
-}
-
+    "termA": "チャレンジ (charenji)",
+    "termB": "challenge (English)",
+    "explanation": "Often means trying something new. (Set 3)",
+    "example": "新しい料理にチャレンジしてみる。"
+  }
 ]
